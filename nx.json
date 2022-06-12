@@ -1,5 +1,5 @@
 {
-  "npmScope": "nest-authentication-practice",
+  "npmScope": "nest-auth-practice",
   "affected": {
     "defaultBase": "main"
   },
@@ -15,9 +15,10 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "ZjhiNDE3MWEtNTdkMS00M2E3LWIwNWEtZDg1ZGQ1YjNkNjI0fHJlYWQtd3JpdGU="
       }
     }
   },
