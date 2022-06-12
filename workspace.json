@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "nest-auth-practice": "apps/nest-auth-practice"
+  }
+}
