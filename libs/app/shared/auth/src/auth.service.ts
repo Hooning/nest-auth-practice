@@ -31,7 +31,7 @@ export class AuthService {
 
       console.log('## Payload: ', payload);
       return {
-        access_tyoken: this.jwtService.sign(payload, { secret: 'secretKey' }),
+        access_token: this.jwtService.sign(payload, { secret: 'secretKey' }),
       };
     }
   }
