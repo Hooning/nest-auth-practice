@@ -18,7 +18,7 @@ import { JwtStrategy } from '../../../../libs/app/shared/auth/src/jwt.strategy';
     PassportModule,
     JwtModule.register({
       secret: jwtConstants.secret,
-      signOptions: { expiresIn: '60s' },
+      // signOptions: { expiresIn: '5s' }, // does not get expired
     }),
   ],
   controllers: [AppController],
