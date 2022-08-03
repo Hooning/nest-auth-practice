@@ -31,7 +31,10 @@ export class AuthService {
 
       console.log('## Payload: ', payload);
       return {
-        access_token: this.jwtService.sign(payload, { secret: 'secretKey' }),
+        access_token: this.jwtService.sign(payload, {
+          secret: 'secretKey123', // keep this as env variable
+          expiresIn: '10s', // keep this as env variable
+        }),
       };
     }
   }
